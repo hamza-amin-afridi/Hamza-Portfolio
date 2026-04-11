@@ -372,6 +372,38 @@ nav.scrolled {
     background: rgba(255,255,255,0.08);
 }
 
+/* Formspree AJAX Styles */
+[data-fs-success]:not([style*="display: none"]),
+[data-fs-success]:not([style*="display:none"]) {
+    display: block !important;
+}
+
+[data-fs-success]:not([style*="display: none"]) ~ form {
+    display: none;
+}
+
+[data-fs-error]:not([style*="display: none"]),
+[data-fs-error]:not([style*="display:none"]) {
+    display: block !important;
+    margin-bottom: 20px;
+    padding: 15px;
+    background: rgba(255, 107, 107, 0.1);
+    border: 1px solid rgba(255, 107, 107, 0.2);
+    border-radius: 8px;
+}
+
+[data-fs-field][aria-invalid="true"] {
+    border-color: #ff6b6b !important;
+}
+
+span[data-fs-error] {
+    display: block;
+    margin-top: 5px;
+    font-size: 0.8rem;
+    color: #ff6b6b;
+}
+
+
 /* Footer */
 footer {
     padding: 60px 0;

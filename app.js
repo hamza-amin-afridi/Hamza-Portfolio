@@ -29,37 +29,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     revealElements.forEach(el => observer.observe(el));
 
-    // 3. Form Handling (Optional visual feedback)
-    const contactForm = document.getElementById('portfolio-form');
-    if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
-            // The form will submit to Formspree, but we can show a "Sending..." state
-            const btn = this.querySelector('button');
-            const originalText = btn.innerText;
-            btn.innerText = 'Sending...';
-            btn.disabled = true;
+    // 3. Form Handling - Handled by Formspree AJAX Library
+    // Form logic is initialized in index.html for better integration with @formspree/ajax
 
-            // Formspree will handle the actual redirect or AJAX
-            // If using AJAX:
-            /*
-            e.preventDefault();
-            const formData = new FormData(this);
-            fetch(this.action, {
-                method: 'POST',
-                body: formData,
-                headers: { 'Accept': 'application/json' }
-            }).then(response => {
-                if (response.ok) {
-                    btn.innerText = 'Message Sent!';
-                    this.reset();
-                } else {
-                    btn.innerText = 'Error! Try again.';
-                }
-                setTimeout(() => { btn.innerText = originalText; btn.disabled = false; }, 3000);
-            });
-            */
-        });
-    }
 
     // 4. Smooth Scroll for internal links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {

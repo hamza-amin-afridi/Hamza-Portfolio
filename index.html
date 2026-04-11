@@ -167,17 +167,17 @@
                 </div>
 
                 <div class="contact-form glass" data-reveal>
-                    <div id="form-success" style="display: none; text-align: center; padding: 20px;">
+                    <div data-fs-success style="display: none; text-align: center; padding: 20px;">
                         <i class="fas fa-check-circle" style="font-size: 3rem; color: var(--accent-color); margin-bottom: 20px; display: block;"></i>
                         <h3>Message Sent!</h3>
                         <p>Thank you, I'll get back to you soon.</p>
                         <button class="btn btn-outline" style="margin-top: 20px;" onclick="location.reload()">Send Another</button>
                     </div>
-                    <div id="form-error" style="display: none; color: #ff6b6b; text-align: center; margin-bottom: 20px;">
+                    <div data-fs-error style="display: none; color: #ff6b6b; text-align: center; margin-bottom: 20px;">
                         Oops! There was a problem submitting your form.
                     </div>
 
-                    <form id="portfolio-form">
+                    <form id="portfolio-form" action="https://formspree.io/f/meepyayn" method="POST">
                         <div class="form-group">
                             <label for="name">Your Name</label>
                             <input type="text" id="name" name="name" placeholder="John Doe" required data-fs-field>
@@ -191,6 +191,7 @@
                         <div class="form-group">
                             <label for="service">Interested In</label>
                             <input type="text" id="service" name="service" placeholder="Web Development / UI Design" data-fs-field>
+                            <span data-fs-error="service" style="color: #ff6b6b; font-size: 0.8rem;"></span>
                         </div>
                         <div class="form-group">
                             <label for="message">Message</label>
@@ -214,17 +215,7 @@
     <!-- Formspree Integration -->
     <script>
         window.formspree = window.formspree || function () { (formspree.q = formspree.q || []).push(arguments); };
-        formspree('initForm', { 
-            formElement: '#portfolio-form', 
-            formId: 'meepyayn',
-            onSuccess: function() {
-                document.getElementById('portfolio-form').style.display = 'none';
-                document.getElementById('form-success').style.display = 'block';
-            },
-            onError: function() {
-                document.getElementById('form-error').style.display = 'block';
-            }
-        });
+        formspree('initForm', { formElement: '#portfolio-form', formId: 'meepyayn' });
     </script>
     <script src="https://unpkg.com/@formspree/ajax@1" defer></script>
 </body>
