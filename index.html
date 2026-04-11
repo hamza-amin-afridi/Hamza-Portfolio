@@ -3,9 +3,229 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hamza Amin Portfolio</title>
+    <title>Hamza Amin Afridi | Front-End Developer</title>
+    <meta name="description" content="Portfolio of Hamza Amin Afridi, a professional Front-End Developer specializing in modern, high-performance web experiences.">
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    
+    <nav id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Hamza.</a>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="projects.html">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <a href="#contact" class="btn btn-primary" style="padding: 10px 20px;">Hire Me</a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container hero-grid">
+            <div class="hero-content" data-reveal>
+                <span class="hero-badge">Available for Projects</span>
+                <h1>Crafting Exceptional <br><span style="color: var(--primary-color)">Digital Experiences.</span></h1>
+                <p>Hi, I'm Hamza Amin Afridi. A passionate Front-End Developer dedicated to building beautiful, functional, and user-centric websites.</p>
+                <div class="hero-btns">
+                    <a href="projects.html" class="btn btn-primary">Explore My Work</a>
+                    <a href="#contact" class="btn btn-outline" style="margin-left: 15px;">Get In Touch</a>
+                </div>
+            </div>
+            <div class="hero-image" data-reveal>
+                <!-- Replace with your photo -->
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1000&auto=format&fit=crop" alt="Hamza Amin Afridi">
+            </div>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <div class="section-header" data-reveal>
+                <h2>About Me</h2>
+                <div style="width: 50px; height: 3px; background: var(--primary-color); margin: 0 auto 20px;"></div>
+                <p style="max-width: 700px; margin: 0 auto;">I blend technical expertise with creative vision to build front-end solutions that stand out. With a focus on performance and accessibility, I turn complex requirements into elegant code.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" style="background: rgba(255,255,255,0.02);">
+        <div class="container">
+            <div class="section-header" data-reveal>
+                <h2>My Expertise</h2>
+            </div>
+            <div class="skills-container">
+                <div class="skill-item" data-reveal>
+                    <div class="skill-icon glass"><i class="fab fa-html5" style="color: #e34f26;"></i></div>
+                    <span>HTML5</span>
+                </div>
+                <div class="skill-item" data-reveal>
+                    <div class="skill-icon glass"><i class="fab fa-css3-alt" style="color: #1572b6;"></i></div>
+                    <span>CSS3</span>
+                </div>
+                <div class="skill-item" data-reveal>
+                    <div class="skill-icon glass"><i class="fab fa-js" style="color: #f7df1e;"></i></div>
+                    <span>JavaScript</span>
+                </div>
+                <div class="skill-item" data-reveal>
+                    <div class="skill-icon glass"><i class="fab fa-react" style="color: #61dafb;"></i></div>
+                    <span>React</span>
+                </div>
+                <div class="skill-item" data-reveal>
+                    <div class="skill-icon glass"><i class="fab fa-sass" style="color: #cc6699;"></i></div>
+                    <span>Sass</span>
+                </div>
+                <div class="skill-item" data-reveal>
+                    <div class="skill-icon glass"><i class="fab fa-figma" style="color: #f24e1e;"></i></div>
+                    <span>Figma</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="featured">
+        <div class="container">
+            <div class="section-header" data-reveal>
+                <h2>Featured Projects</h2>
+                <p>A selection of my recent work</p>
+            </div>
+            
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card glass" onclick="window.open('#', '_blank')" data-reveal>
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=800&auto=format&fit=crop" alt="Project 1">
+                    <div class="project-tags">
+                        <span class="tag">React</span>
+                        <span class="tag">Dashboard</span>
+                    </div>
+                    <h3>Modern SaaS Interface</h3>
+                    <p>A sleek, interactive dashboard for data analytics with real-time updates.</p>
+                    <div class="project-link">
+                        View Project <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card glass" onclick="window.open('#', '_blank')" data-reveal>
+                    <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?q=80&w=800&auto=format&fit=crop" alt="Project 2">
+                    <div class="project-tags">
+                        <span class="tag">Next.js</span>
+                        <span class="tag">E-commerce</span>
+                    </div>
+                    <h3>Premium Brand Store</h3>
+                    <p>High-performance e-commerce experience with seamless animations and transitions.</p>
+                    <div class="project-link">
+                        View Project <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card glass" onclick="window.open('#', '_blank')" data-reveal>
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800&auto=format&fit=crop" alt="Project 3">
+                    <div class="project-tags">
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">Web App</span>
+                    </div>
+                    <h3>Creative Studio Site</h3>
+                    <p>A portfolio site for a creative agency featuring custom shaders and smooth scroll.</p>
+                    <div class="project-link">
+                        View Project <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 50px;" data-reveal>
+                <a href="projects.html" class="btn btn-outline">Explore All Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info" data-reveal>
+                    <h3>Let's Work <br><span style="color: var(--primary-color)">Together</span></h3>
+                    <p style="color: var(--text-secondary); margin-bottom: 40px;">Have a project in mind or just want to say hi? Feel free to reach out. I'm always open to discussing new projects and creative ideas.</p>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>hamzaaminafridi@gmail.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fab fa-linkedin-in"></i>
+                        <div>
+                            <h4>LinkedIn</h4>
+                            <p>linkedin.com/in/hamza-amin</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form glass" data-reveal>
+                    <div id="form-success" style="display: none; text-align: center; padding: 20px;">
+                        <i class="fas fa-check-circle" style="font-size: 3rem; color: var(--accent-color); margin-bottom: 20px; display: block;"></i>
+                        <h3>Message Sent!</h3>
+                        <p>Thank you, I'll get back to you soon.</p>
+                        <button class="btn btn-outline" style="margin-top: 20px;" onclick="location.reload()">Send Another</button>
+                    </div>
+                    <div id="form-error" style="display: none; color: #ff6b6b; text-align: center; margin-bottom: 20px;">
+                        Oops! There was a problem submitting your form.
+                    </div>
+
+                    <form id="portfolio-form">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" placeholder="John Doe" required data-fs-field>
+                            <span data-fs-error="name" style="color: #ff6b6b; font-size: 0.8rem;"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="john@example.com" required data-fs-field>
+                            <span data-fs-error="email" style="color: #ff6b6b; font-size: 0.8rem;"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Interested In</label>
+                            <input type="text" id="service" name="service" placeholder="Web Development / UI Design" data-fs-field>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required data-fs-field></textarea>
+                            <span data-fs-error="message" style="color: #ff6b6b; font-size: 0.8rem;"></span>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;" data-fs-submit-btn>Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Hamza Amin Afridi. Built with passion and code.</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+    <!-- Formspree Integration -->
+    <script>
+        window.formspree = window.formspree || function () { (formspree.q = formspree.q || []).push(arguments); };
+        formspree('initForm', { 
+            formElement: '#portfolio-form', 
+            formId: 'meepyayn',
+            onSuccess: function() {
+                document.getElementById('portfolio-form').style.display = 'none';
+                document.getElementById('form-success').style.display = 'block';
+            },
+            onError: function() {
+                document.getElementById('form-error').style.display = 'block';
+            }
+        });
+    </script>
+    <script src="https://unpkg.com/@formspree/ajax@1" defer></script>
 </body>
 </html>
