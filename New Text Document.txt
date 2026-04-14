@@ -1,6 +1,3 @@
 git commit -m "Files Updated"
 git commit -m "Files Updated"
 git commit -m "Files Updated"
-git commit -m "Files Updated"
-git commit -m "Files Updated"
-git commit -m "Files Updated"
